@@ -8,4 +8,56 @@ script = ExtResource( 1 )
 
 [node name="EventNode" parent="." instance=ExtResource( 2 )]
 position = Vector2( 534.207, 314.98 )
-year = "2001"
+year = "1903"
+event = "A wildlife refuge is established on Pelican Island, Florida."
+node_radius = 20.0
+node_color = Color( 0.764706, 0.764706, 0.764706, 1 )
+outline_color = Color( 0.580392, 0.580392, 0.580392, 1 )
+
+[node name="EventNode2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 315.074, 334.263 )
+year = "1890"
+event = "The first national park is created at Yellowstone."
+node_radius = 30.0
+node_color = Color( 0.054902, 1, 0, 1 )
+outline_color = Color( 0.827451, 0, 1, 1 )
+
+[node name="EventNode3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 172.208, 312.039 )
+year = "1970"
+event = "The White River is highly polluted at this point."
+
+[node name="EventNode4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 324.598, 170.76 )
+year = "1972"
+event = "The Federal Water Pollution Control Act of 1948 was amended to give the government more power to control water pollutants"
+
+[node name="EventNode5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 180.938, 204.096 )
+year = "1972"
+event = "The Federal Water Pollution Control Act of 1948 was amended to give the government more power to control water pollutants"
+
+[node name="EventNode6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 476.195, 465.223 )
+year = "2017"
+event = "The Sierra Club protests the shrinking of Grand Staircase-Escalante National Monument by President Trump. The order passes anyway."
+node_color = Color( 1, 0, 0, 1 )
+outline_color = Color( 1, 1, 0, 1 )
+
+[node name="EventNode7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 425.398, 222.351 )
+year = "1954"
+event = "The solar panel is invented by Daryl Chapin, Clavin Fuller, and Gerald Pearson."
+node_radius = 15.0
+node_color = Color( 0, 1, 1, 1 )
+outline_color = Color( 0, 0, 1, 1 )
+
+[node name="EventNode8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 734.941, 279.497 )
+year = "1955"
+event = "The Outdoor Code appears in print for the first time in the Boy Scout Handbook."
+
+[node name="EventNode9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 734.941, 279.497 )
+year = "1838"
+event = "John Muir is born. He will later be instrumental in the formation of Yosemite National Park."

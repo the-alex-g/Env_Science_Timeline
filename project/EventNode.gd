@@ -1,3 +1,4 @@
+class_name TimeNode
 extends Node2D
 
 # signals
@@ -20,13 +21,16 @@ var _ignore
 onready var _year_label := $YearLabel
 onready var _event_label := $EventLabel
 onready var _click_area := $ClickArea/CollisionShape2D
+onready var _clear_area := $ClearArea/CollisionShape2D
 
 
 func _ready()->void:
 	_year_label.text = year
 	_event_label.text = event
 	_event_label.visible = false
+	_year_label.margin_top = -node_radius-25
 	_click_area.shape.radius = node_radius
+	_clear_area.shape.radius = node_radius*1.5
 	_event_label.margin_top = node_radius+10
 
 
@@ -43,3 +47,12 @@ func _draw()->void:
 	draw_circle(Vector2.ZERO, node_radius, outline_color)
 	draw_circle(Vector2.ZERO, node_radius*0.9, node_color)
 	draw_circle(Vector2(shine_distance, -shine_distance), node_radius/4, Color.white)
+
+
+func _on_ClearArea_area_entered(area:Area2D)->void:
+	var other_position := area.get_global_transform().origin
+	var self_position := get_global_transform().origin
+	if self_position.x-other_position.x > 0:
+		position.x += node_radius*2
+	else:
+		position.x -= node_radius*2
