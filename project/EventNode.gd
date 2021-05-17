@@ -29,7 +29,9 @@ func _ready()->void:
 	_event_label.text = event
 	_event_label.visible = false
 	_year_label.margin_top = -node_radius-25
+	_click_area.shape = CircleShape2D.new()
 	_click_area.shape.radius = node_radius
+	_clear_area.shape = CircleShape2D.new()
 	_clear_area.shape.radius = node_radius*1.5
 	_event_label.margin_top = node_radius+10
 
@@ -53,6 +55,6 @@ func _on_ClearArea_area_entered(area:Area2D)->void:
 	var other_position := area.get_global_transform().origin
 	var self_position := get_global_transform().origin
 	if self_position.x-other_position.x > 0:
-		position.x += node_radius*2
+		position.x += node_radius*1.1
 	else:
-		position.x -= node_radius*2
+		position.x -= node_radius*1.1
