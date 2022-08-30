@@ -21,7 +21,7 @@ position = Vector2( 315.074, 334.263 )
 year = "1890"
 event = "The first national park is created at Yellowstone."
 node_radius = 30.0
-node_color = Color( 0.054902, 1, 0, 1 )
+node_color = Color( 0.0352941, 0.607843, 0, 1 )
 outline_color = Color( 0.827451, 0, 1, 1 )
 
 [node name="EventNode3" parent="EventNodes" instance=ExtResource( 2 )]
@@ -39,7 +39,7 @@ position = Vector2( 476.195, 465.223 )
 year = "2017"
 event = "The Sierra Club protests the shrinking of Grand Staircase-Escalante National Monument by President Trump. The order passes anyway."
 node_color = Color( 1, 0, 0, 1 )
-outline_color = Color( 1, 1, 0, 1 )
+outline_color = Color( 0.109804, 0.741176, 0, 1 )
 
 [node name="EventNode7" parent="EventNodes" instance=ExtResource( 2 )]
 position = Vector2( 425.398, 222.351 )
@@ -61,3 +61,20 @@ outline_color = Color( 0.415686, 0.313726, 0.0823529, 1 )
 position = Vector2( 734.941, 279.497 )
 year = "1838"
 event = "John Muir is born. He will later be instrumental in the formation of Yosemite National Park."
+
+[node name="EventNode10" parent="EventNodes" instance=ExtResource( 2 )]
+position = Vector2( 789, 347 )
+year = "1916"
+event = "National Park Service established by President Woodrow Wilson."
+node_radius = 15.0
+node_color = Color( 0.0313726, 0, 1, 1 )
+outline_color = Color( 0.776471, 0.364706, 0, 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchor_right = 1.0
+margin_bottom = 83.0
+text = "Timeline of the American History of Environmental Science!"
+align = 1
+valign = 1
